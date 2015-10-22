@@ -79,8 +79,8 @@
 					<h2>GIS Data</h2>
 					<h3><a href="https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information/free-data-geogratis/11042">GeoGratis.ca</a></h3>
 					<p>"Find free maps, data, and publications to use without restriction" from Natural Resources Canada</p>
-					<p><small>Dataset used: <a href="http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/6d1d8f90-1c25-5fd0-880d-138d27c8cb57.html">Federal Electoral Districts (FEDs) 2011</a></small></p>
-					<p><small>FED shapefile also available from <a href="http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2011-eng.cfm">Statistics Canada</a> but GeoGratis specifically cites <a href="http://open.canada.ca/en/open-government-licence-canada">Open Government License - Canada</a></small></p>
+					<p><small>Dataset used: <a href="http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/6d1d8f90-1c25-5fd0-880d-138d27c8cb57.html">Federal Electoral Districts 2011</a></small></p>
+					<p><small>Electoral district shapefile also available from <a href="http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2011-eng.cfm">Statistics Canada</a> but GeoGratis specifically cites <a href="http://open.canada.ca/en/open-government-licence-canada">Open Government License - Canada</a></small></p>
 				</section>
 
 				<!-- 6-9 -->
@@ -97,8 +97,8 @@
 					<section>
 						<h2>GIS</h2>
 						<ol>
-							<li>Simplified geometry of FED shapefile (1.2 million vertices to 67,067 vertices)</li>
-							<li>Joined riding data to shapefile</li>
+							<li>Simplified geometry of electoral district shapefile to speed up data loading in final map</li>
+							<li>Joined queried MP data to shapefile using electoral district identifier</li>
 							<li>Exported as GeoJSON file for mapping with Leaflet</li>
 						</ol>
 					</section>
